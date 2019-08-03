@@ -562,6 +562,7 @@ body {
     font-size: 27px;
 }
 
+/*section 3 --FAQ--*/
 .faq {
     grid-area: faq;
     width: 1366px;
@@ -672,6 +673,97 @@ body {
     margin: 0 0 0 62px;
 }
 
+/*section --Features--*/
+.features_title {
+    left: 556px;
+    top: 1918px;
+    width: 251px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    color: #28b45d;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.fast_block,
+.education_block,
+.loophole_block,
+.profit_block {
+    left: 142px;
+    top: 2110px;
+    width: 496px;
+    height: 187px;
+    border: none;
+    border-radius: 10px;
+    background-color: #a09f9f;
+    letter-spacing: 1px;
+    color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.fast_block:hover,
+.education_block:hover,
+.loophole_block:hover,
+.profit_block:hover {
+    transform: scale(1.052, 1.055);
+    background-color: #28b45d;
+}
+
+.education_block,
+.profit_block {
+    left: 730px;
+}
+
+.loophole_block,
+.profit_block {
+    top: 2365px;
+}
+
+.info1 {
+    position: relative;
+    left: 125px;
+    top: -48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.info2 {
+    position: relative;
+    left: 127px;
+    top: -35.6px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17.07px;
+    width: 314.14px;
+    line-height: 26.45px;
+}
+
+.fast_icon {
+    position: relative;
+    left: 40px;
+    top: 48px;
+}
+
+.icon1 {
+    left: 29px;
+    top: 49px;
+}
+
+.icon2 {
+    left: 29px;
+    top: 56px;
+}
+
+.icon3 {
+    left: 35px;
+    top: 52px;
+}
+
+/*section --Footer--*/
 .footer {
     grid-area: footer;
     width: 1366px;
@@ -758,7 +850,7 @@ body {
     left: 949px;
 }
 
-/*classes for adding*/
+/*classes for adding with jQuery*/
 .hide {
     display: none;
 }
