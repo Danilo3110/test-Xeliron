@@ -470,6 +470,7 @@ body {
     font-size: 36px;
     font-weight: bold;
     color: #a09f9f;
+    transition: 0.1s ease;
 }
 
 .register div:nth-child(2),
@@ -513,40 +514,60 @@ body {
 
 .advice div:nth-child(2) {
     left: 985px;
+    text-align: center;
 }
 
 .advice div:nth-child(3) {
     left: 944px;
 }
 
-.register img:nth-child(4),
-.account img:nth-child(4),
-.advice img:nth-child(4) {
+#img_register,
+#img_account,
+#img_advice {
     left: 135.5px;
     top: 1319px;
+    background-image: url('../assets/placeholder.png');
+    transition: 0.25s ease;
+    width: 282px;
+    height: 164px;
 }
 
-.register img:nth-child(5) {
+#icon_register {
     left: 154px;
     top: 1164px;
+    background-image: url('../assets/leadbox.png');
+    transition: 0.2s ease;
+    width: 245px;
+    height: 289px;
+    cursor: pointer;
 }
 
-.account img:nth-child(4) {
+#img_account {
     left: 543px;
 }
 
-.account img:nth-child(5) {
+#icon_account {
     left: 561px;
     top: 1231px;
+    background-image: url('../assets/credit_card.png');
+    transition: 0.2s ease;
+    width: 246px;
+    height: 203px;
+    cursor: pointer;
 }
 
-.advice img:nth-child(4) {
+#img_advice {
     left: 950px;
 }
 
-.advice img:nth-child(5) {
+#icon_advice {
     left: 974px;
-    top: 1148px;
+    top: 1130px;
+    background-image: url('../assets/photo.png');
+    transition: 0.2s ease;
+    width: 246px;
+    height: 353px;
+    cursor: pointer;
 }
 
 .steps_section .button {

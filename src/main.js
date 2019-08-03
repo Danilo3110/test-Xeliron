@@ -123,6 +123,44 @@ const questionHandler = () => {
     $('.answer').slideToggle('hide');
 };
 
+const hoverAll = () => {
+    $('#icon_register').hover(function() {
+        $(this).css({backgroundImage: `url('../assets/leadbox1.png')`});
+        $('.register div:eq(0)').css({color: '#28b45d', fontSize: '48px', left: '264px', top: '1057px'});
+        $('.register div:eq(1)').css({color: '#28b45d', fontSize: '36px', left: '197px', top: '1509px'});
+        $('#img_register').css({backgroundImage: `url('../assets/placeholder1.png')`, width: '297px', height: '353px', left: '128px', top: '1130px'});
+    }, function() {
+        $(this).css({backgroundImage: `url('../assets/leadbox.png')`});
+        $('.register div:eq(0)').css({color: '#a09f9f', fontSize: '36px', left: '267px', top: '1117px'});
+        $('.register div:eq(1)').css({color: '#a09f9f', fontSize: '30px', left: '209px', top: '1513px'});
+        $('#img_register').css({backgroundImage: `url('../assets/placeholder.png')`, width: '282px', height: '164px', left: '135.5px', top: '1319px'});
+    });
+
+    $('#icon_account').hover(function() {
+        $(this).css({backgroundImage: `url('../assets/credit_card1.png')`});
+        $('.account div:eq(0)').css({color: '#28b45d', fontSize: '48px', left: '672px', top: '1057px'});
+        $('.account div:eq(1)').css({color: '#28b45d', fontSize: '36px', left: '521px', top: '1509px'});
+        $('#img_account').css({backgroundImage: `url('../assets/placeholder1.png')`, width: '297px', height: '353px', left: '535.5px', top: '1130px'});
+    }, function() {
+        $(this).css({backgroundImage: `url('../assets/credit_card.png')`});
+        $('.account div:eq(0)').css({color: '#a09f9f', fontSize: '36px', left: '674px', top: '1117px'});
+        $('.account div:eq(1)').css({color: '#a09f9f', fontSize: '30px', left: '539px', top: '1513px'});
+        $('#img_account').css({backgroundImage: `url('../assets/placeholder.png')`, width: '282px', height: '164px', left: '543px', top: '1319px'});
+    });
+
+    $('#icon_advice').hover(function() {
+        $(this).css({backgroundImage: `url('../assets/photo1.png')`});
+        $('.advice div:eq(0)').css({color: '#28b45d', fontSize: '48px', left: '1080px', top: '1057px'});
+        $('.advice div:eq(1)').css({color: '#28b45d', fontSize: '36px', left: '973px', top: '1509px'});
+        $('#img_advice').css({backgroundImage: `url('../assets/placeholder1.png')`, width: '297px', height: '353px', left: '942.5px', top: '1130px'});
+    }, function() {
+        $(this).css({backgroundImage: `url('../assets/photo.png')`});
+        $('.advice div:eq(0)').css({color: '#a09f9f', fontSize: '36px', left: '1083px', top: '1117px'});
+        $('.advice div:eq(1)').css({color: '#a09f9f', fontSize: '30px', left: '985px', top: '1513px'});
+        $('#img_advice').css({backgroundImage: `url('../assets/placeholder.png')`, width: '282px', height: '164px', left: '950px', top: '1319px'});
+    });
+};
+
 const eventsAll = () => {
     $('#email').on('focus, input', () => enterEmail('#email', '.form'));
     $('.first_step .button, #next-step').on('click', () => {
@@ -135,4 +173,4 @@ const eventsAll = () => {
     $('.steps_section .button, #features').on('click', featuresHandlerOn);
 };
 
-$(document).on('load', eventsAll());
+$(document).on('load', eventsAll(), hoverAll());
