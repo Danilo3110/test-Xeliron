@@ -117,7 +117,8 @@ body {
     cursor: pointer;
 }
 
-.first_step input {
+.first_step input,
+.modal_section input {
     background-color: #f9f9f930;
     border: none;
     outline: none;
@@ -128,12 +129,22 @@ body {
     letter-spacing: 1px;
 }
 
-.first_step input::placeholder {
+.modal_section input {
+    background-color: #9d9d9d30;
+}
+
+.first_step input::placeholder,
+.modal_section input::placeholder {
     color: rgba(255, 255, 255, 0.60);
     letter-spacing: 1px;
 }
 
-.first_step span {
+.modal_section input::placeholder {
+    color: #9d9d9d;
+}
+
+.first_step span,
+.modal_section span {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     color: rgba(255, 255, 255, 0.60);
@@ -141,17 +152,25 @@ body {
 
 .first_step img,
 .first_step span,
+.modal_section img,
+.modal_section span,
 #checkbox,
 .privacy,
 .button,
 #data_icon,
 .data_protected,
 .more_info,
-.more_info div {
+.more_info div,
+#x_icon,
+#video {
     position: absolute;
 }
 
-#first_name {
+#first_name,
+#last_name,
+#email,
+#email2,
+#phone {
     position: absolute;
     left: 843.12px;
     top: 253.12px;
@@ -166,12 +185,8 @@ body {
 }
 
 #last_name {
-    position: absolute;
     left: 1013.12px;
-    top: 253.12px;
     width: 179.09px;
-    height: 51.18px;
-    padding-left: 45px;
 }
 
 #user_icon2 {
@@ -179,13 +194,12 @@ body {
     top: 268px;
 }
 
-#email {
-    position: absolute;
+#email,
+#email2,
+#phone {
     left: 842.78px;
     top: 316.12px;
     width: 349.09px;
-    height: 51.18px;
-    padding-left: 45px;
 }
 
 #email_icon {
@@ -199,9 +213,37 @@ body {
     letter-spacing: 1px;
 }
 
+#phone {
+    top: 379.12px;
+    padding-left: 149px;
+}
+
+#flag_icon {
+    left: 853px;
+    top: 391.5px;
+}
+
+.phone_number .prefix {
+    left: 905px;
+}
+
+#arrow_icon {
+    left: 949.5px;
+    top: 400.3px;
+}
+
+#divider_icon {
+    left: 976px;
+    top: 386px;
+}
+
+.phone_number .prefix {
+    top: 395px;
+}
+
 #checkbox {
     left: 860px;
-    top: 386px;
+    top: 385px;
     width: 16px;
     height: 16px;
 }
@@ -214,13 +256,13 @@ body {
     color: rgba(255, 255, 255, 0.70);
     width: 296px;
     letter-spacing: 0.5px;
+    cursor: pointer;
 }
 
 .privacy div {
     display: inline-block;
     color: #28b45d;
     letter-spacing: 0.5px;
-    cursor: pointer;
 }
 
 .button {
@@ -292,6 +334,98 @@ body {
     left: 14px;
     top: 18px;
     width: 202.6px;
+}
+
+/*section one -- modal --*/
+#x_icon {
+    left: 1218px;
+    top: 42px;
+    cursor: pointer;
+}
+
+#video {
+    left: 145px;
+    top: 42px;
+    width: 1047px;
+    height: 560px;
+}
+
+.modal_section #first_name,
+.modal_section #last_name,
+.modal_section #email2 {
+    left: 468.78px;
+    top: 617.56px;
+    width: 205.15px;
+    height: 47.65px;
+    padding-left: 61.2px;
+}
+
+.modal_section #last_name {
+    left: 683.78px;
+}
+
+.modal_section #email2 {
+    top: 676.56px;
+    width: 420.15px;
+}
+
+.modal_section #user_icon,
+.modal_section #user_icon2,
+.modal_section #email_icon {
+    left: 486px;
+    top: 632px;
+    color: #9d9d9d;
+}
+
+.modal_section #user_icon2 {
+    left: 701px;
+}
+
+.modal_section #email_icon {
+    top: 693px;
+}
+
+.modal_section .email {
+    left: 653px;
+    top: 691px;
+}
+
+.modal_headline {
+    position: absolute;
+    left: 220px;
+    top: 644px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #9d9d9d;
+}
+
+.modal_headline div {
+    font-size: 26px;
+    font-weight: bold;
+    color: #28b45d;
+}
+
+.modal_section .button {
+    left: 900.62px;
+    top: 617.56px;
+    width: 244.34px;
+    height: 106.65px;
+}
+
+.modal_section .button-desc {
+    left: 918px;
+    top: 660px;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+#arrow_icon2 {
+    left: 1117px;
+    top: 662px;
+    cursor: pointer;
 }
 
 /*section two*/
@@ -624,6 +758,13 @@ body {
     left: 949px;
 }
 
+/*classes for adding*/
 .hide {
     display: none;
+}
+
+.button_next_step {
+    left: 843.12px;
+    top: 477px;
+    width: 348.34px;
 }
