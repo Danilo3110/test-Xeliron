@@ -13,7 +13,7 @@ const render_secondStep = () => {
 
 const render_Modal = () => {
     const $modal = $(`<section class="modal_section">
-                        <img src="../assets/x icon.png" alt="x_icon" id="x_icon">
+                        <img src="../assets/x_icon.png" alt="x_icon" id="x_icon" title="close">
                         <img src="../assets/video.png" alt="video" id="video">
                         <div class="modal_headline">start&nbsp;making<div>money&nbsp;today!</div></div>
                         <input type="text" class="first_name" id="first_name" placeholder="First name">
@@ -39,6 +39,7 @@ const render_Modal = () => {
 const render_Features = () => {
     const $features = $(`<section class="features">
                             <div class="features_title position-absolute">Features</div>
+                            <div class="position-absolute" id="close_x_features" title="close"></div>
                             <div class="fast_block position-absolute">
                                 <img src="../assets/fast icon.png" alt="fast" class="fast_icon">
                                 <div class="info1">lorem ipsum</div>
@@ -65,6 +66,22 @@ const render_Features = () => {
                             </div>
                         </section>`);
     $('.faq').prepend($features);
+};
+
+const render_Reasurance = () => {
+    const $reasurance = $(`<section class="reasurance">
+                            <div class="position-absolute" id="img_phone"></div>
+                            <div class="position-absolute" id="close_x" title="close"></div>
+                            <div class="position-absolute" id="subtitle">What&nbsp;you&nbsp;should know about industry:</div>
+                        </section>`);
+    $('.footer').prepend($reasurance);
+    for (let i=1; i <= 4; i++) {
+        const $reasuranceContainer = $('.reasurance');
+        let $bullets = $(`<div class="position-absolute bullet" id="bullet_${i}"></div>
+                            <div class="position-absolute point" id="point_${i}">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore mag</div>`);
+        $bullets.appendTo($reasuranceContainer);
+    }
 };
 
 const secondStepHandler = (test) => {
@@ -98,15 +115,35 @@ const featuresHandlerOn = () => {
     $('.faq').css({backgroundColor: 'unset'});
     $('.faq_title, .questions').addClass('hide');
     render_Features();
+    animateFocus('.features');
     $('.steps_section .button, #features').off('click');
-    $('.steps_section .button, #features').on('click', featuresHandlerOff);
+    $('#close_x_features').on('click', featuresHandlerOff);
 };
 
 const featuresHandlerOff = () => {
     $('.features').remove();
     $('.faq').css({backgroundColor: '#28b45d'});
     $('.faq_title, .questions').removeClass('hide');
+    $('#close_x_features').off('click');
     $('.steps_section .button, #features').on('click', featuresHandlerOn);
+};
+
+const reasuranceHandlerOn = () => {
+    $('#footer').addClass('hide');
+    $('.footer').addClass('footerHeight');
+    render_Reasurance();
+    animateFocus('.reasurance');
+    $('#icon_advice').off('click');
+    $('#close_x').on('click', reasuranceHandlerOff);
+};
+
+const reasuranceHandlerOff = () => {
+    $('.reasurance').remove();
+    $('#footer').removeClass('hide');
+    $('.footer').removeClass('footerHeight');
+    animateFocus('#footer');
+    $('#close_x').off('click');
+    $('#icon_advice').on('click', reasuranceHandlerOn);
 };
 
 const enterEmail = (input, hide) => {
@@ -121,6 +158,10 @@ const questionHandler = () => {
     }
     $('.icon span:first-of-type, .icon span:last-of-type').toggleClass('rotate');
     $('.answer').slideToggle('hide');
+};
+
+const animateFocus = (toLocation) => {
+    $('html, body').animate({ scrollTop: $(`${toLocation}`).offset().top }, 800);
 };
 
 const hoverAll = () => {
@@ -171,6 +212,7 @@ const eventsAll = () => {
     $('.question1 .icon').on('click', questionHandler);
     $('.here').on('click', modalHandlerOn);
     $('.steps_section .button, #features').on('click', featuresHandlerOn);
+    $('#icon_advice').on('click', reasuranceHandlerOn);
 };
 
 $(document).on('load', eventsAll(), hoverAll());

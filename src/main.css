@@ -898,6 +898,86 @@ body {
     left: 949px;
 }
 
+#img_phone {
+    left: 186px;
+    top: 2700px;
+    width: 379px;
+    height: 700px;
+    background-image: url('../assets/phone.png');
+    background-repeat: no-repeat;
+}
+
+#close_x,
+#close_x_features {
+    left: 1218px;
+    top: 2700px;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/x_icon.png');
+    cursor: pointer;
+}
+
+#close_x_features {
+    top: 1918px;
+    background-color: #9d9d9d;
+}
+
+#subtitle {
+    left: 686px;
+    top: 2796px;
+    width: 530px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #28b45d;
+}
+
+.bullet {
+    left: 718.59px;
+    top: 2979px;
+    width: 13.78px;
+    height: 14.5px;
+    border: 1px solid #28b45d;
+    border-radius: 5px;
+    background-color: #9d9d9d;
+}
+
+#bullet_2 {
+    top: 3058.53px;
+}
+
+#bullet_3 {
+    top: 3135.53px;
+}
+
+#bullet_4 {
+    top: 3216.53px;
+}
+
+.point {
+    left: 754px;
+    top: 2963px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    width: 455px;
+    color: #9d9d9d;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+}
+
+#point_2 {
+    top: 3042px;
+}
+
+#point_3 {
+    top: 3119px;
+}
+
+#point_4 {
+    top: 3200px;
+}
+
 /*classes for adding with jQuery*/
 .hide {
     display: none;
@@ -907,4 +987,8 @@ body {
     left: 843.12px;
     top: 477px;
     width: 348.34px;
+}
+
+.footerHeight {
+    height: 730px;
 }
