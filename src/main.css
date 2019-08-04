@@ -63,6 +63,33 @@ body {
     letter-spacing: 1px;
 }
 
+#lenguage_flag {
+    left: 1211px;
+    top: 30px;
+    width: 29px;
+    height: 28px;
+    background-image: url('../assets/flag2.png');
+}
+
+#lenguage {
+    left: 1254px;
+    top: 33.2px;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: white;
+    cursor: pointer;
+}
+
+#lng_arrow {
+    left: 1332px;
+    top: 42px;
+    width: 7px;
+    height: 4px;
+    background-image: url('../assets/down_arrow_icon.png');
+    cursor: pointer;
+}
+
 .headline {
     width: 565.16px;
     height: 483px;
