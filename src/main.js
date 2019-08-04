@@ -17,11 +17,11 @@ const render_Modal = () => {
                         <img src="../assets/video.png" alt="video" id="video">
                         <div class="modal_headline">start&nbsp;making<div>money&nbsp;today!</div></div>
                         <input type="text" class="first_name" id="first_name" placeholder="First name">
-                        <img src="../assets/user icon.png" alt="user" id="user_icon">
+                        <img src="../assets/user_icon.png" alt="user" id="user_icon">
                         <input type="text" class="last_name" id="last_name" placeholder="Last name">
-                        <img src="../assets/user icon.png" alt="user" id="user_icon2">
+                        <img src="../assets/user_icon.png" alt="user" id="user_icon2">
                         <input type="text" name="email" id="email2">
-                        <img src="../assets/email icon.png" alt="email" id="email_icon">
+                        <img src="../assets/email_icon.png" alt="email" id="email_icon">
                         <span class="email">E&minus;mail</span>
                         <div class="button"></div>
                         <div class="button-desc">go&nbsp;to&nbsp;next&nbsp;step</div>
@@ -203,6 +203,10 @@ const hoverAll = () => {
 };
 
 const eventsAll = () => {
+    $('.privacy').on('click', () => {
+        const $check = $('#checkbox');
+        return $check.is(':checked') ? $check.prop('checked', false) : $check.prop('checked', true);
+    });
     $('#email').on('focus, input', () => enterEmail('#email', '.form'));
     $('.first_step .button, #next-step').on('click', () => {
         const test = $('#checkbox').is(':checked');
