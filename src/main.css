@@ -1,16 +1,12 @@
-body,
-.container {
+body {
     width: 1366px;
     padding: 0;
     margin: 0;
     font-family: 'Mada', sans-serif;
-}
-
-body {
     line-height: normal;
 }
 
-.container {
+.containerAll {
     width: 1366px;
     display: grid;
     grid-template-areas:
@@ -787,6 +783,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 17.07px;
     width: 314.14px;
+    height: 79.2px;
     line-height: 26.45px;
 }
 

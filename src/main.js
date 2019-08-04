@@ -5,7 +5,7 @@ const render_secondStep = () => {
                             <input type="text" name="phone" id="phone" placeholder="Phone">
                             <img src="../assets/flag.png" alt="flag" id="flag_icon">
                             <span class="prefix">&plus;381</span>
-                            <img src="../assets/drop down arrow.png" alt="arrow" id="arrow_icon">
+                            <img src="../assets/drop_down_arrow.png" alt="arrow" id="arrow_icon">
                             <img src="../assets/divider_phone.png" alt="divided" id="divider_icon">
                         </section>`);
     $('.form').after($secondStep);
@@ -25,7 +25,7 @@ const render_Modal = () => {
                         <span class="email">E&minus;mail</span>
                         <div class="button"></div>
                         <div class="button-desc">go&nbsp;to&nbsp;next&nbsp;step</div>
-                        <img src="../assets/arrow icon.png" class="position-absolute" alt="arrow" id="arrow_icon2">
+                        <img src="../assets/arrow_icon.png" class="position-absolute" alt="arrow" id="arrow_icon2">
                     </section>`);
     $('.video_overlay').prepend($modal);
     $('#x_icon').on('click', modalHandlerOff);
@@ -41,25 +41,25 @@ const render_Features = () => {
                             <div class="features_title position-absolute">Features</div>
                             <div class="position-absolute" id="close_x_features" title="close"></div>
                             <div class="fast_block position-absolute">
-                                <img src="../assets/fast icon.png" alt="fast" class="fast_icon">
+                                <img src="../assets/fast_icon.png" alt="fast" class="fast_icon">
                                 <div class="info1">lorem ipsum</div>
                                 <div class="info2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                     incididunt ut labore</div>
                             </div>
                             <div class="education_block position-absolute">
-                                <img src="../assets/education icon.png" alt="education" class="fast_icon icon1">
+                                <img src="../assets/education_icon.png" alt="education" class="fast_icon icon1">
                                 <div class="info1">lorem ipsum</div>
                                 <div class="info2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                     incididunt ut labore</div>
                             </div>
                             <div class="loophole_block position-absolute">
-                                <img src="../assets/loophole icon.png" alt="loophole" class="fast_icon icon2">
+                                <img src="../assets/loophole_icon.png" alt="loophole" class="fast_icon icon2">
                                 <div class="info1">lorem ipsum</div>
                                 <div class="info2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                     incididunt ut labore</div>
                             </div>
                             <div class="profit_block position-absolute">
-                                <img src="../assets/profit icon.png" alt="profit" class="fast_icon icon3">
+                                <img src="../assets/profit_icon.png" alt="profit" class="fast_icon icon3">
                                 <div class="info1">lorem ipsum</div>
                                 <div class="info2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                     incididunt ut labore</div>
